@@ -1,0 +1,4 @@
+<div uib-alert ng-repeat="alert in user.alerts" ng-class="'alert-' + (alert.type || 'warning')" close="user.closeAlert($index)">{{alert.msg}}</div>
+<alert-component uib-alert style="background-color:#fa39c3;color:white">A happy alert!</alert-component>
+<!--<div uib-alert template-url="alert.html" style="background-color:#fa39c3;color:white">A happy alert!</div>-->
+<button type="button" class="btn btn-default" ng-click="user.addAlert()">Add Alert</button>
